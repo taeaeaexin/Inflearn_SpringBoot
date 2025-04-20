@@ -21,6 +21,12 @@ public class HelloController {
         return "hello-template";
     }
 
+    @GetMapping("template-test")
+    public String templatetest(@RequestParam("id") String id, Model model){
+        model.addAttribute("getid", id);
+        return "template-test";
+    }
+
     // #2 문자열
     // 문자열로 반환
     @GetMapping("hello-string")
