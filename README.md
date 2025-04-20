@@ -1,5 +1,10 @@
 # 모르는 내용 메모
 - @ResponseBody
+    - HTTP Body에 문자 내용을 직접 반환.
+    - return 값이 객체인 경우 viewResolver 대신 HttpMessageConverter 동작
+    - 문자 처리 : StringHttpMessageConverter
+    - 객체 처리 : MappingJackson2HttpMessageConverter
+    - Jackson : 객체를 json으로 바꿔주는 Library (google의 Gson도 있음 Spring은 Jackson 탑재)
 - Map
 - Lambda
 - JUnit

@@ -15,16 +15,11 @@ public class HelloController {
         return "hello";
     }
 
+    // #1 TemplateEngine (Thymeleaf)
     @GetMapping("hello-mvc")
     public String helloMvc(@RequestParam("name") String name, Model model){
         model.addAttribute("name", name);
         return "hello-template";
-    }
-
-    @GetMapping("template-test")
-    public String templatetest(@RequestParam("id") String id, Model model){
-        model.addAttribute("getid", id);
-        return "template-test";
     }
 
     // #2 문자열
@@ -39,12 +34,13 @@ public class HelloController {
     // JSON 방식(key:value)으로 return
     @GetMapping("hello-api")
     @ResponseBody
-    public Hello helloApi(@RequestParam("name") String name) {
+    public Hello hello(@RequestParam("name") String name){
         Hello hello = new Hello();
         hello.setName(name);
         return hello;
     }
-    static class Hello {
+
+    static class Hello{
         private String name;
 
         public String getName() {
