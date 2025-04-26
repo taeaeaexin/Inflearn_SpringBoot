@@ -10,9 +10,7 @@
 - JUnit
 - TemplateEngine : Thymeleaf
 
-- 아주 좋은 질문이에요. 질문하신 기술들 — JDBC, MyBatis, JPQL, JPA, Spring Data JPA — 이건 모두 ORM(Object-Relational Mapping) 과 관련된 기술들이긴 하지만, "모두 ORM이다" 라고 보긴 어렵습니다. 각각의 역할과 계층이 다르기 때문이에요. 하나씩 구분해서 설명드릴게요.
-
-I. 가장 기초: JDBC (Java Database Connectivity)
+JDBC (Java Database Connectivity)
 ORM 아님
 
 Java에서 DB와 연결할 수 있게 해주는 가장 낮은 수준의 API
