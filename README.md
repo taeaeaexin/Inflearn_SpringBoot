@@ -10,8 +10,7 @@
 - JUnit
 - TemplateEngine : Thymeleaf
 
-JDBC (Java Database Connectivity)
-ORM 아님
+- JDBC (Java Database Connectivity) : ORM 아님
 
 Java에서 DB와 연결할 수 있게 해주는 가장 낮은 수준의 API
 
@@ -19,16 +18,8 @@ Connection, Statement, ResultSet 등을 직접 써야 함 → SQL을 직접 다�
 
 단점: 반복 코드 많고 유지보수 힘듦
 
-✅ 예시:
 
-java
-복사
-편집
-Connection conn = DriverManager.getConnection(...);
-PreparedStatement pstmt = conn.prepareStatement("SELECT * FROM users");
-ResultSet rs = pstmt.executeQuery();
-II. MyBatis
-✅ SQL Mapper 프레임워크 (ORM은 아님)
+- MyBatis : SQL Mapper 프레임워크 (ORM은 아님)
 
 SQL을 직접 작성하지만, Java 객체와 결과 매핑을 자동으로 해줌 → "반(半)자동 ORM"
 
@@ -38,18 +29,9 @@ XML 또는 어노테이션으로 SQL 정의
 
 복잡한 쿼리 쉽게 작성 가능
 
-성능 제어가 뛰어남
+능 제어가 뛰어남
 
-✅ 예시:
-
-xml
-복사
-편집
-<select id="selectUser" resultType="User">
-  SELECT * FROM users WHERE id = #{id}
-</select>
-III. JPA (Java Persistence API)
-✅ 표준 ORM 사양
+- JPA (Java Persistence API) : 표준 ORM 사양
 
 Java 객체 ↔ 테이블 자동 매핑
 
@@ -57,27 +39,13 @@ SQL 없이 객체 중심으로 DB 다룰 수 있음
 
 Hibernate, EclipseLink 등이 JPA 구현체
 
-✅ 예시:
-
-java
-복사
-편집
-User user = entityManager.find(User.class, 1L); // SQL 없음
-IV. JPQL (Java Persistence Query Language)
-✅ JPA에서 사용하는 객체 지향 쿼리 언어
+- JPQL (Java Persistence Query Language) : JPA에서 사용하는 객체 지향 쿼리 언어
 
 SQL과 비슷하지만, 테이블 이름이 아닌 엔티티 이름 사용
 
 쿼리를 객체 기준으로 작성함
 
-✅ 예시:
-
-java
-복사
-편집
-SELECT u FROM User u WHERE u.name = :name
-V. Spring Data JPA
-✅ Spring이 제공하는 JPA 추상화/자동화 라이브러리
+- Spring Data JPA : Spring이 제공하는 JPA 추상화/자동화 라이브러리
 
 Repository 인터페이스만 작성하면 CRUD 구현 자동으로 생성
 
