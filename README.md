@@ -5,23 +5,30 @@
 
 ## 01 스프링 기본
 <details>
-    <summary>🟢 스프링 입문 - 코드로 배우는 스프링 부트, 웹 MVC, DB 접근 기술</summary>
+    <summary>스프링 입문 - 코드로 배우는 스프링 부트, 웹 MVC, DB 접근 기술 🟢</summary>
     <div markdown="1">
-    <ul>
-      <li>✅ 강의 소개</li>
-      <li>✅ 프로젝트 환경설정</li>
-      <li>✅ 스프링 웹 개발 기초</li>
-      <li>✅ 회원 관리 예제 - 백엔드 개발</li>
-      <li>🟢 스프링 빈과 의존관계 </li>
-    </ul>
+        <ul>
+          <li>강의 소개 ✅</li>
+          <li>프로젝트 환경설정 ✅</li>
+          <li>스프링 웹 개발 기초 ✅</li>
+          <li>회원 관리 예제 - 백엔드 개발 ✅</li>
+          <li>스프링 빈과 의존관계 🟢</li>
+          <li>자바 코드로 직접 스프링 빈 등록하기</li>
+          <li>회원 관리 예제 - 웹 MVC 개발</li>
+          <li>스프링 DB 접근 기술</li>
+          <li>AOP</li>
+          <li>다음으로</li>
+        </ul>
+    </div>
 </details>
 
 <details>
     <summary>스프링 핵심 원리 - 기본편</summary>
     <div markdown="1">
-    <ul>
-      <li></li>
-    </ul>
+        <ul>
+          <li></li>
+        </ul>
+    </div>
 </details>
 
 <br>

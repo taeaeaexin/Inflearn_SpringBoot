@@ -1,5 +1,6 @@
 package taesin.spring.repository;
 
+import org.springframework.stereotype.Repository;
 import taesin.spring.domain.Member;
 
 import java.util.List;
